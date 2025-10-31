@@ -1,12 +1,21 @@
+import React from 'react';
 
-import React, { useState } from 'react';
 function App() {
-  const [count, setCount] = useState(0)
+  const user = {
+    name: "Poushie",
+    age: 21,
+    hobby: "coding",
+  };
 
+ 
   return (
-    
-      <h1>Hello world </h1>
-  )
+    <div>
+      <h1>Portfolio</h1>
+      <p>Hello, {user.name}</p>
+      <p>You are {user.age} years ur hobby {user.hobby}.</p>
+     
+    </div>
+  );
 }
 
-export default App
+export default App;
